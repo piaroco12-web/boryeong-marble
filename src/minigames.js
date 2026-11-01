@@ -272,7 +272,7 @@ function tunnel(root, ctx) {
       clearTrail();
       let p = [...lv.start];
       setBeam(p);
-      beam.classList.remove('idle'); // 실행 전에는 안테나 그림이 보이도록 숨겨 둔다
+      beam.classList.remove('idle'); // 실행 전에는 굴착기 그림이 보이도록 숨겨 둔다
       let result = 'short';
       for (let i = 0; i < queue.length; i++) {
         root.querySelectorAll('.q').forEach((q) => q.classList.toggle('now', Number(q.dataset.q) === i));

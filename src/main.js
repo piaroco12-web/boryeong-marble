@@ -508,14 +508,27 @@ function say(expr, text) {
 
 async function openIntro() {
   const places = D.board.places;
+  // 시간 제한을 끈 설정에서는 초 안내를 빼야 한다
+  const timeNote = RULES.quizSec ? ` ${RULES.quizSec}초 안에 답해 주세요.` : '';
   await modal(
     `${say('normal', `안녕! 나는 ${esc(S.guide.name)}야. 오늘 같이 ${esc(D.board.regionName)}을 돌아보자!`)}
+     <div class="howto">
+       <h2>🎯 목표</h2>
+       <p><b>${RULES.turns}턴</b> 안에 도장 <b>${S.stamps.length}개</b>를 모두 모아 <b>${esc(D.board.startName)}</b>으로 돌아오기! 완주하면 +${RULES.finishBonus}점이에요.</p>
+       <h2>🎲 이렇게 해요</h2>
+       <ol class="howto-list">
+         <li>주사위를 굴려 말을 옮겨요.</li>
+         <li>장소에 멈추면 문제가 나와요. 맞히면 <b>+${RULES.correct}점</b>!</li>
+         <li>아래 <b>오늘의 도장</b> 장소에서 맞히면 도장을 받아요.</li>
+         <li>틀리면 ❤️가 하나 줄어요. (${RULES.hearts}개)${timeNote}</li>
+       </ol>
+     </div>
      <h2>⭐ 오늘의 도장</h2>
-     <p>이 ${S.stamps.length}곳에서 문제를 맞혀 도장을 모으고, <b>${esc(D.board.startName)}</b>으로 돌아오세요!</p>
+     <p>이 ${S.stamps.length}곳이에요.</p>
      <div class="intro-cards">${S.stamps
        .map((id) => `<div class="intro-card">${art(places[id].art, places[id].emoji, 'intro-bld')}<b>${esc(places[id].name)}</b></div>`)
        .join('')}</div>
-     <p class="muted">🚌 ${esc(D.board.busName)} ${S.buses}번: 왼쪽 아래 버스를 누르면 도장 장소로 바로 갈 수 있어요.</p>
+     <p class="muted">🚌 ${esc(D.board.busName)} ${S.buses}번: 왼쪽 아래 버스를 누르면 도장 장소로 바로 갈 수 있어요.<br>💡 힌트 ${S.hints}번: 네 개짜리 보기를 둘로 줄여 줘요.</p>
      <button class="btn primary" data-close>좋아요, 출발!</button>`,
     'intro',
   );
@@ -800,12 +813,12 @@ function updateHudSafe() {
 // ---------- 찬스 · 쉼터 ----------
 async function chance() {
   const events = [
-    { text: '인삼 씨앗을 한 줌 주웠어요!', note: '+10점', run: () => (S.score += 10) },
+    { text: '갯벌에서 굴을 한 자루 캤어요!', note: '+10점', run: () => (S.score += 10) },
     { text: '버스표를 한 장 얻었어요!', note: `${D.board.busName} +1`, run: () => S.buses++ },
     S.hearts < RULES.hearts
-      ? { text: '홍삼 한 뿌리를 먹고 힘이 났어요!', note: '하트 +1', run: () => S.hearts++ }
-      : { text: '홍삼 한 뿌리를 먹고 힘이 났어요!', note: '하트가 가득해서 +10점', run: () => (S.score += 10) },
-    { text: '금강 바람을 타고 앞으로 날아가요!', note: '2칸 앞으로', run: async () => (await move(2), land(true)) },
+      ? { text: '머드팩을 하고 기운이 났어요!', note: '하트 +1', run: () => S.hearts++ }
+      : { text: '머드팩을 하고 기운이 났어요!', note: '하트가 가득해서 +10점', run: () => (S.score += 10) },
+    { text: '해저터널을 쌩 하고 달려가요!', note: '2칸 앞으로', run: async () => (await move(2), land(true)) },
     { text: '깜짝 퀴즈! 맞히면 +20점, 틀려도 하트는 그대로예요.', note: '도전!', run: () => bonusQuiz() },
     settings.minigameRate > 0 && {
       text: '깜짝 미니게임! 성공하면 +15점이에요.',
