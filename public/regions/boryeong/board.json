@@ -1,0 +1,175 @@
+{
+  "title": "다 같이 돌자, 보령 한 바퀴",
+  "regionName": "보령",
+  "width": 1536,
+  "height": 1024,
+  "start": 0,
+  "startName": "머드축제 마당",
+  "restName": "죽도 상화원 솔숲",
+  "chanceName": "머드 보물 상자",
+  "busName": "보령 버스",
+  "places": {
+    "mudpark": {
+      "name": "보령머드테마파크",
+      "short": "머드파크",
+      "emoji": "💧",
+      "art": "art/bld-mudpark.png",
+      "categories": ["specialty", "society"],
+      "mode": "quiz_or_minigame",
+      "minigames": ["memory"]
+    },
+    "beach": {
+      "name": "대천해수욕장",
+      "short": "대천해변",
+      "emoji": "🏖️",
+      "art": "art/bld-beach.png",
+      "categories": ["nature", "society"],
+      "mode": "quiz_or_minigame",
+      "minigames": ["tidal"]
+    },
+    "muchangpo": {
+      "name": "무창포 신비의 바닷길",
+      "short": "무창포",
+      "emoji": "🌊",
+      "art": "art/bld-muchangpo.png",
+      "categories": ["nature", "safety"],
+      "mode": "quiz"
+    },
+    "inkstone": {
+      "name": "남포벼루 마을",
+      "short": "남포벼루",
+      "emoji": "🖌️",
+      "art": "art/bld-inkstone.png",
+      "categories": ["specialty", "history"],
+      "mode": "quiz"
+    },
+    "coal": {
+      "name": "보령석탄박물관",
+      "short": "석탄박물관",
+      "emoji": "⛏️",
+      "art": "art/bld-coal.png",
+      "categories": ["history", "society"],
+      "mode": "quiz"
+    },
+    "seongju": {
+      "name": "성주사지",
+      "short": "성주사지",
+      "emoji": "🗿",
+      "art": "art/bld-seongju.png",
+      "categories": ["history", "people"],
+      "mode": "quiz"
+    },
+    "suyeong": {
+      "name": "충청수영성",
+      "short": "수영성",
+      "emoji": "🛡️",
+      "art": "art/bld-suyeong.png",
+      "categories": ["history", "people"],
+      "mode": "quiz"
+    },
+    "oyster": {
+      "name": "천북 굴단지",
+      "short": "천북 굴",
+      "emoji": "🦪",
+      "art": "art/bld-oyster.png",
+      "categories": ["specialty", "environment"],
+      "mode": "quiz_or_minigame",
+      "minigames": ["tidal"]
+    },
+    "tunnel": {
+      "name": "보령해저터널",
+      "short": "해저터널",
+      "emoji": "🚇",
+      "art": "art/bld-tunnel.png",
+      "categories": ["society", "safety"],
+      "mode": "quiz_or_minigame",
+      "minigames": ["tunnel"]
+    },
+    "oeyeon": {
+      "name": "외연도 상록수림",
+      "short": "외연도",
+      "emoji": "🏝️",
+      "art": "art/bld-oeyeon.png",
+      "categories": ["nature", "environment"],
+      "mode": "quiz"
+    }
+  },
+  "tiles": [
+    { "id": 0, "type": "start", "x": 770, "y": 470, "next": [1] },
+    { "id": 1, "type": "place", "x": 600, "y": 545, "next": [2], "place": "mudpark" },
+    { "id": 2, "type": "chance", "x": 470, "y": 480, "next": [3] },
+    { "id": 3, "type": "place", "x": 345, "y": 405, "next": [4], "place": "beach" },
+    { "id": 4, "type": "place", "x": 215, "y": 520, "next": [5], "place": "muchangpo", "label": "left" },
+    { "id": 5, "type": "place", "x": 300, "y": 690, "next": [6], "place": "inkstone" },
+    { "id": 6, "type": "chance", "x": 470, "y": 745, "next": [7] },
+    { "id": 7, "type": "place", "x": 640, "y": 700, "next": [8], "place": "coal" },
+    { "id": 8, "type": "place", "x": 820, "y": 690, "next": [9], "place": "seongju" },
+    { "id": 9, "type": "rest", "x": 990, "y": 780, "next": [10] },
+    { "id": 10, "type": "place", "x": 1150, "y": 640, "next": [11], "place": "suyeong" },
+    { "id": 11, "type": "chance", "x": 1110, "y": 500, "next": [12] },
+    { "id": 12, "type": "place", "x": 1090, "y": 360, "next": [13], "place": "oyster" },
+    { "id": 13, "type": "place", "x": 880, "y": 285, "next": [14], "place": "tunnel" },
+    { "id": 14, "type": "place", "x": 650, "y": 270, "next": [15], "place": "oeyeon" },
+    { "id": 15, "type": "rest", "x": 470, "y": 315, "next": [0] }
+  ],
+  "forks": {},
+  "startArt": "art/bld-start.png",
+  "restArt": "art/bld-rest.png",
+  "chanceArt": "art/bld-chance.png",
+  "mapArt": "art/map-base.png",
+  "pieces": [
+    { "id": "mud", "name": "머드 요정", "emoji": "💧", "art": "art/piece-mud.png" },
+    { "id": "oyster", "name": "천북 굴돌이", "emoji": "🦪", "art": "art/piece-oyster.png" },
+    { "id": "shrimp", "name": "보령 대하", "emoji": "🦐", "art": "art/piece-shrimp.png" },
+    { "id": "lighthouse", "name": "등대 로봇", "emoji": "🤖", "art": "art/piece-lighthouse.png" }
+  ],
+  "guides": [
+    {
+      "name": "보미",
+      "emoji": "👧",
+      "art": {
+        "normal": "art/char-bomi-normal.png",
+        "think": "art/char-bomi-think.png",
+        "happy": "art/char-bomi-happy.png",
+        "sad": "art/char-bomi-sad.png",
+        "surprised": "art/char-bomi-surprised.png"
+      }
+    },
+    {
+      "name": "령이",
+      "emoji": "🧒",
+      "art": {
+        "normal": "art/char-ryeongi-normal.png",
+        "think": "art/char-ryeongi-think.png",
+        "happy": "art/char-ryeongi-happy.png",
+        "sad": "art/char-ryeongi-sad.png",
+        "surprised": "art/char-ryeongi-surprised.png"
+      }
+    }
+  ],
+  "ui": {
+    "titleBg": "art/ui-title-bg.png",
+    "bus": "art/ui-bus.png",
+    "heart": "art/ui-heart.png",
+    "heartEmpty": "art/ui-heart-empty.png",
+    "score": "art/ui-score.png",
+    "hint": "art/ui-hint.png",
+    "stamp": "art/ui-stamp.png",
+    "trophy": "art/ui-trophy.png",
+    "paper": "art/ui-paper.png"
+  },
+  "minigameArt": {
+    "field": "art/mg-tidal-flat.png",
+    "root": "art/mg-oyster.png",
+    "cardBack": "art/mg-card-back.png",
+    "cards": [
+      "art/mg-card-1.png",
+      "art/mg-card-2.png",
+      "art/mg-card-3.png",
+      "art/mg-card-4.png"
+    ],
+    "antenna": "art/mg-drill.png",
+    "satellite": "art/mg-wonsando.png",
+    "block": "art/mg-rock.png"
+  }
+}
