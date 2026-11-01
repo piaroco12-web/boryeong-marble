@@ -96,8 +96,8 @@ Vercel에 올릴 때는 Framework를 Vite로 두면 됩니다.
 
 ## 아직 할 일
 
-- [ ] 그림 47장 (`PROMPTS.md`) — 기준 이미지(보령머드테마파크)부터 만드세요
-- [ ] 앱 아이콘 `public/icons/icon-192.png`, `icon-512.png` — 지금은 **금산판 아이콘이 그대로 들어 있습니다**. `PROMPTS.md` 마지막 항목으로 다시 만들어 덮어쓰세요
+- [x] 그림 47장 (`PROMPTS.md`) — 완료
+- [x] 앱 아이콘 `public/icons/` 교체 완료
 - [ ] `verified: false` 문항 4개 확인
 - [ ] `facts.json`의 `[확인 필요]` 1건 (보령시 승격 연도)
 - [ ] 사진 퀴즈용 사진과 출처 (선택)
