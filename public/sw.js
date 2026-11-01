@@ -1,7 +1,7 @@
 // 오프라인 설치용 서비스 워커
 // 한 번 열어 둔 파일은 저장해 두고, 인터넷이 없어도 저장본으로 실행한다.
 // 인터넷이 있으면 저장본을 먼저 보여 주고 뒤에서 새 파일로 바꿔 둔다.
-const CACHE = 'boryeong-marble-v1';
+const CACHE = 'boryeong-marble-v2';
 
 // 없는 그림을 서버가 HTML 페이지로 돌려주는 경우가 있어, 그런 응답은 저장하지 않는다
 function storable(url, res) {

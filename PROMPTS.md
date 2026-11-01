@@ -3,7 +3,7 @@
 > 각 프롬프트는 공통 스타일 문장까지 들어 있는 완성본입니다. 코드 블록 오른쪽 위 복사 버튼으로 복사해 ChatGPT에 그대로 붙여 넣으세요.
 > 저장 위치: `public/regions/boryeong/art/` · 파일 이름을 그대로 쓰면 게임에 바로 들어갑니다.
 
-그림 **47장** + 앱 아이콘 1장 (⬜ 필요 · ✅ 완료)
+그림 **47장 완료** · 앱 아이콘 1장 ⬜ 필요 (⬜ 필요 · ✅ 완료)
 
 ## 목차
 
@@ -20,54 +20,54 @@
 
 | 상태 | 파일 | 그림 |
 |---|---|---|
-| ⬜ | `style-anchor.png` | 기준 이미지: 보령머드테마파크 |
-| ⬜ | `map-base.png` | 지도 바탕 (건물 없이) |
-| ⬜ | `bld-mudpark.png` | 보령머드테마파크 (= 기준 이미지) |
-| ⬜ | `bld-beach.png` | 대천해수욕장 |
-| ⬜ | `bld-muchangpo.png` | 무창포 신비의 바닷길 |
-| ⬜ | `bld-inkstone.png` | 남포벼루 마을 |
-| ⬜ | `bld-coal.png` | 보령석탄박물관 |
-| ⬜ | `bld-seongju.png` | 성주사지 |
-| ⬜ | `bld-suyeong.png` | 충청수영성 |
-| ⬜ | `bld-oyster.png` | 천북 굴단지 |
-| ⬜ | `bld-tunnel.png` | 보령해저터널 |
-| ⬜ | `bld-oeyeon.png` | 외연도 상록수림 |
-| ⬜ | `bld-start.png` | 출발: 머드축제 마당 |
-| ⬜ | `bld-rest.png` | 쉼터: 죽도 상화원 솔숲 |
-| ⬜ | `bld-chance.png` | 찬스: 머드 보물 상자 |
-| ⬜ | `char-bomi-normal.png` | 보미 기본 |
-| ⬜ | `char-bomi-think.png` | 보미 생각 |
-| ⬜ | `char-bomi-happy.png` | 보미 정답 |
-| ⬜ | `char-bomi-sad.png` | 보미 오답 |
-| ⬜ | `char-bomi-surprised.png` | 보미 시간 초과 |
-| ⬜ | `char-ryeongi-normal.png` | 령이 기본 |
-| ⬜ | `char-ryeongi-think.png` | 령이 생각 |
-| ⬜ | `char-ryeongi-happy.png` | 령이 정답 |
-| ⬜ | `char-ryeongi-sad.png` | 령이 오답 |
-| ⬜ | `char-ryeongi-surprised.png` | 령이 시간 초과 |
-| ⬜ | `piece-mud.png` | 말: 머드 요정 |
-| ⬜ | `piece-oyster.png` | 말: 천북 굴돌이 |
-| ⬜ | `piece-shrimp.png` | 말: 보령 대하 |
-| ⬜ | `piece-lighthouse.png` | 말: 등대 로봇 |
-| ⬜ | `mg-tidal-flat.png` | 갯벌에서 캐기: 갯벌 배경 |
-| ⬜ | `mg-oyster.png` | 갯벌에서 캐기: 굴 |
-| ⬜ | `mg-card-back.png` | 짝 맞추기: 카드 뒷면 |
-| ⬜ | `mg-card-1.png` | 짝 맞추기: 머드 방울 |
-| ⬜ | `mg-card-2.png` | 짝 맞추기: 굴 |
-| ⬜ | `mg-card-3.png` | 짝 맞추기: 남포벼루 |
-| ⬜ | `mg-card-4.png` | 짝 맞추기: 해저터널 |
-| ⬜ | `mg-drill.png` | 해저터널 뚫기: 굴착기 (출발점) |
-| ⬜ | `mg-wonsando.png` | 해저터널 뚫기: 원산도 (도착점) |
-| ⬜ | `mg-rock.png` | 해저터널 뚫기: 암반 장애물 |
-| ⬜ | `ui-title-bg.png` | 첫 화면 배경 |
-| ⬜ | `ui-bus.png` | 보령 버스 아이콘 |
-| ⬜ | `ui-heart.png` | 하트 (가득) |
-| ⬜ | `ui-heart-empty.png` | 하트 (빈칸) |
-| ⬜ | `ui-score.png` | 점수 아이콘 |
-| ⬜ | `ui-hint.png` | 힌트 아이콘 |
-| ⬜ | `ui-stamp.png` | 도장 자국 |
-| ⬜ | `ui-trophy.png` | 완주 트로피 |
-| ⬜ | `ui-paper.png` | 카드 바탕 종이 (반복 무늬) |
+| ✅ | `style-anchor.png` | 기준 이미지: 보령머드테마파크 |
+| ✅ | `map-base.png` | 지도 바탕 (건물 없이) |
+| ✅ | `bld-mudpark.png` | 보령머드테마파크 (= 기준 이미지) |
+| ✅ | `bld-beach.png` | 대천해수욕장 |
+| ✅ | `bld-muchangpo.png` | 무창포 신비의 바닷길 |
+| ✅ | `bld-inkstone.png` | 남포벼루 마을 |
+| ✅ | `bld-coal.png` | 보령석탄박물관 |
+| ✅ | `bld-seongju.png` | 성주사지 |
+| ✅ | `bld-suyeong.png` | 충청수영성 |
+| ✅ | `bld-oyster.png` | 천북 굴단지 |
+| ✅ | `bld-tunnel.png` | 보령해저터널 |
+| ✅ | `bld-oeyeon.png` | 외연도 상록수림 |
+| ✅ | `bld-start.png` | 출발: 머드축제 마당 |
+| ✅ | `bld-rest.png` | 쉼터: 죽도 상화원 솔숲 |
+| ✅ | `bld-chance.png` | 찬스: 머드 보물 상자 |
+| ✅ | `char-bomi-normal.png` | 보미 기본 |
+| ✅ | `char-bomi-think.png` | 보미 생각 |
+| ✅ | `char-bomi-happy.png` | 보미 정답 |
+| ✅ | `char-bomi-sad.png` | 보미 오답 |
+| ✅ | `char-bomi-surprised.png` | 보미 시간 초과 |
+| ✅ | `char-ryeongi-normal.png` | 령이 기본 |
+| ✅ | `char-ryeongi-think.png` | 령이 생각 |
+| ✅ | `char-ryeongi-happy.png` | 령이 정답 |
+| ✅ | `char-ryeongi-sad.png` | 령이 오답 |
+| ✅ | `char-ryeongi-surprised.png` | 령이 시간 초과 |
+| ✅ | `piece-mud.png` | 말: 머드 요정 |
+| ✅ | `piece-oyster.png` | 말: 천북 굴돌이 |
+| ✅ | `piece-shrimp.png` | 말: 보령 대하 |
+| ✅ | `piece-lighthouse.png` | 말: 등대 로봇 |
+| ✅ | `mg-tidal-flat.png` | 갯벌에서 캐기: 갯벌 배경 |
+| ✅ | `mg-oyster.png` | 갯벌에서 캐기: 굴 |
+| ✅ | `mg-card-back.png` | 짝 맞추기: 카드 뒷면 |
+| ✅ | `mg-card-1.png` | 짝 맞추기: 머드 방울 |
+| ✅ | `mg-card-2.png` | 짝 맞추기: 굴 |
+| ✅ | `mg-card-3.png` | 짝 맞추기: 남포벼루 |
+| ✅ | `mg-card-4.png` | 짝 맞추기: 해저터널 |
+| ✅ | `mg-drill.png` | 해저터널 뚫기: 굴착기 (출발점) |
+| ✅ | `mg-wonsando.png` | 해저터널 뚫기: 원산도 (도착점) |
+| ✅ | `mg-rock.png` | 해저터널 뚫기: 암반 장애물 |
+| ✅ | `ui-title-bg.png` | 첫 화면 배경 |
+| ✅ | `ui-bus.png` | 보령 버스 아이콘 |
+| ✅ | `ui-heart.png` | 하트 (가득) |
+| ✅ | `ui-heart-empty.png` | 하트 (빈칸) |
+| ✅ | `ui-score.png` | 점수 아이콘 |
+| ✅ | `ui-hint.png` | 힌트 아이콘 |
+| ✅ | `ui-stamp.png` | 도장 자국 |
+| ✅ | `ui-trophy.png` | 완주 트로피 |
+| ✅ | `ui-paper.png` | 카드 바탕 종이 (반복 무늬) |
 
 ## 공통 스타일 문장
 
